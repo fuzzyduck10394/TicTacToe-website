@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #2e282a;
+}
+
+a:link,
+a:visited,
+a:active,
+a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#gameMode {
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    height: 60vh;
+    width: 100%;
+}
+
+#header {
+    top: 0;
+    width: 100%;
+    height: 80px;
+
+    padding: 45px 20px 20px 3%;
+
+    background-color: #76b041;
+
+    margin-bottom: 80px;
+
+    font-size: 25px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+#logo {
+    margin-top: 6px;
+    padding-right: 30px;
+
+    float: left;
+    height: 50px;
+}
+
+#header h1 {
+    display: inline;
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+
+    margin-bottom: 50px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 40px;
+
+    transition: 0.5s;
+    color: white;
+}
+
+.box:hover {
+    height: 500px;
+}
+
+.box .imgBx {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: #2E282A;
+    box-sizing: border-box;
+
+}
+
+
+.box .imgBx img {
+
+    max-width: 100%;
+
+    opacity: 0.1;
+    transition: 0.5s;
+}
+
+.box:hover .imgBx img {
+    opacity: 1;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+
+
+    z-index: -1;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+
+    z-index: -2;
+    filter: blur(40px);
+}
+
+.box::before,
+.box::after {
+    background: linear-gradient(#E4572E, #FFC914);
+}
+
+.box .content {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    height: 90px;
+
+    background-color: #76B041;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.box:hover .content {
+    opacity: 1;
+}
+
+.box .content h2 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.box .content h2 span {
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25%;
+}
+
+.center img {
+    width: 250px;
+}

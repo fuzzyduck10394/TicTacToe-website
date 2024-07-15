@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <link rel="icon" href="../.images/faviconv2.png" type="image/x-icon" />
+    <title>Tic Tac Toe</title>
+
+    <meta name="description" content="The tic tac toe game" />
+    <meta name="keywords" content="circle, cross, tic tac toe, 2 players" />
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <link rel="stylesheet" href="../gamestyle.css" type="text/css" />
+    <script src="./partnerscript.js" defer></script>
+</head>
+
+<body onload="resetGame()">
+    <div id="header">
+        <a href="../menu.html">
+            <img src="../.images/faviconv4.png" id="logo">
+
+            <h1>TIC TAC TOE</h1>
+        </a>
+    </div>
+
+    <div id="container">
+        <div id="game">
+            <div id="board"></div>
+            <p id="message"></p>
+            <div id="again">Play again?</div>
+        </div>
+
+        <div id="announcements">
+
+            <div id="scoreboard">
+                <div class="playerSection">
+                    <div class="playerLogo" id="playerLogoX">
+                        <p class="cross">X</p>
+                    </div>
+
+                    <div class="numOfWins" style="border-radius: 0 10px 10px 0;">
+                        <p class="scbText" id="xwins"> </p>
+                    </div>
+                </div>
+                <div class="playerSection">
+                    <div class="numOfWins" style="border-radius: 10px 0 0 10px;">
+                        <p class="scbText" id="owins"></p>
+                    </div>
+
+                    <div class="playerLogo" id="playerLogoO">
+                        <p class="circle">O</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="lead">
+                <p id="announcement" class="scbText">X is in the lead</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
